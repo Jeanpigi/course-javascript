@@ -1,0 +1,19 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(http-equiv='X-UA-Compatible', content='IE=edge')
+  meta(name='viewport', content='width=device-width, initial-scale=1.0')
+  link(rel='stylesheet', href='style.css')
+  link(rel='shortcut icon', href='favicon.png', type='image/x-icon')
+header.header
+  h1 Descuento
+section.container
+  h2 Calcula el descuento de un producto
+  form.form(action='')
+    label(for='InputPrice') Escribe el precio de tu producto
+    input#InputPrice(type='number')
+    label(for='InputDiscount') Escribe el porcentaje de tu producto
+    input#InputDiscount(type='number')
+    button(type='button', onclick='calcularPrecioDescuento()')  Calcular el precio apartir de descuento
+  h3.precio-descuento
+script(defer='', src='descuento.js')

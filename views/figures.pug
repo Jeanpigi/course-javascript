@@ -1,0 +1,20 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(http-equiv='X-UA-Compatible', content='IE=edge')
+  meta(name='viewport', content='width=device-width, initial-scale=1.0')
+  title Course of Javascript
+  link(rel='stylesheet', href='style.css')
+  link(rel='shortcut icon', href='favicon.png', type='image/x-icon')
+header.header
+  h1 Figuras Geom&eacute;tricas
+section.container
+  h2 Calcula el &aacute;rea y el perimetro de un cuadrado
+  form.form(action='')
+    label(for='InputCuadrado') Escribe cu&aacute;nto mide cada lado del cuadrado
+    input#InputCuadrado(type='number')
+    button(type='button', onclick='calcularPerimetroCuadrado()')  Calcular el perimetro
+    button(type='button', onclick='calcularAreaCuadrado()') Calcular el &aacute;rea
+  h3.perimetro-cuadrado
+  h3.area-cuadrado
+script(defer='', src='figures.js')
